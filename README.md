@@ -14,23 +14,23 @@ Welcome to our Web Architecture Practical Course! This repository is designed to
 
 ## Course Structure
 
-1. **Step 0: Environment Setup**
+0. **Environment Setup**
    - Install VSCode, Python, and Node.js.
    - Install and setup Docker and Kubernetes
    - Set up virtual environments for Python.
 
-2. **Database Setup**
+1. **Database Setup**
    - Learn to set up and configure the database for the reservation system.
 
-3. **Backend Development**
+2. **Backend Development**
    - Create two backends to demonstrate the microservices architecture.
      - Backend 1: Node.js
      - Backend 2: FastAPI (Python)
 
-4. **Frontend Development**
+3. **Frontend Development**
    - Develop the user interface for the reservation system using React.
 
-5. **Docker and Kubernetes**
+4. **Docker and Kubernetes**
    - Containerize the application using Docker.
    - Deploy and manage the containers using Kubernetes.
 
