@@ -1,10 +1,10 @@
-**# Web Architecture Practical Course (DLMINFWAWT02_DEV)**
+# Web Architecture Practical Course (DLMINFWAWT02_DEV)
 
-**## Course Overview**
+## Course Overview
 
 Welcome to our Web Architecture Practical Course! This repository is designed to provide hands-on experience in setting up a web-based reservation system, like for hairdressing salons. You'll learn about databases, backends, frontends, microservices, Docker, Kubernetes, and more.
 
-**## Prerequisites**
+## Prerequisites
 
 - Visual Studio Code (VSCode)
 - Python
@@ -12,10 +12,11 @@ Welcome to our Web Architecture Practical Course! This repository is designed to
 - Docker
 - Git (assumed pre-installed)
 
-**## Course Structure**
+## Course Structure
 
 1. **Step 0: Environment Setup**
    - Install VSCode, Python, and Node.js.
+   - Install and setup Docker and Kubernetes
    - Set up virtual environments for Python.
 
 2. **Database Setup**
@@ -35,6 +36,6 @@ Welcome to our Web Architecture Practical Course! This repository is designed to
 
 Each folder in this repository corresponds to a step in the course and contains an `Exercises` and `Solutions` folder. Use the `Exercises` folder to work on your tasks and refer to the `Solutions` folder for completed examples.
 
-**## Getting Started**
+## Getting Started**
 
 Clone this repository and follow the instructions in each folder to proceed with the course.
