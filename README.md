@@ -36,6 +36,6 @@ Welcome to our Web Architecture Practical Course! This repository is designed to
 
 Each folder in this repository corresponds to a step in the course and contains an `Exercises` and `Solutions` folder. Use the `Exercises` folder to work on your tasks and refer to the `Solutions` folder for completed examples.
 
-## Getting Started**
+## Getting Started
 
 Clone this repository and follow the instructions in each folder to proceed with the course.
