@@ -25,3 +25,7 @@ Welcome to the database setup section of our Web Architecture course. In this pa
 ### Note:
 - Ensure you keep a record of your database credentials and connection details securely, as you'll need them for connecting your application to the database.
 - In general, not for this course, familiarize yourself with the Vercel and PostgreSQL documentation for advanced configuration and troubleshooting.
+
+---
+
+Proceed to [Step 2: BackendDevelopment - FastAPI](../Step2_BackendDevelopment/README.md) to continue with the course.
