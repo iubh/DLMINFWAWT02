@@ -92,5 +92,5 @@ If you encounter any issues during setup, refer to the official documentation of
 
 ---
 
-Proceed to [Step 1: Database Setup](../1.Database%20Setup/README.md) to continue with the course.
+Proceed to [Step 1: Database Setup](../Step1_DatabaseSetup/README.md) to continue with the course.
 
