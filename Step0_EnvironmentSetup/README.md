@@ -84,6 +84,14 @@ After activation, you should see `(venv)` at the beginning of your terminal prom
 python --version
 ```
 
+### 4. Deactivate the Virtual Environment
+
+A virtual envirment (venv) can be exited at any time without having to close the terminal prompt. The following command can be executed for this purpose:
+
+```sh
+deactivate
+```
+
 ## Summary
 
 You have now set up your development environment by installing VSCode, Python, Node.js, Docker, and Kubernetes. Additionally, you've created and activated a Python virtual environment. You're ready to proceed to the next step of the course.
