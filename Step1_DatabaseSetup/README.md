@@ -4,16 +4,16 @@ Welcome to the database setup section of our Web Architecture course. In this pa
 
 ## Step 1: Log in to GitHub
 
-1. **Access GitHub**: Visit [GitHub](https://github.com/). If you do not yet have a GitHub user account, you must create one using the "Sign Up" button. If you already have a GitHub user account, you should log in using the button "Sign in".
-2. **Create a new GitHub project**: Create a new private project "DLMINFWAWT02_Web_Architectures" within your personal GitHub user account.
+1. **Access GitHub**: Visit [GitHub](https://github.com/). If you do not yet have a GitHub user account, you must create one using the `Sign Up` button. If you already have a GitHub user account, you should log in using the button `Sign in`.
+2. **Create a new GitHub project**: Create a new private project `DLMINFWAWT02_Web_Architectures` within your personal GitHub user account.
 
 ## Step 2: Log in to Vercel
 
-1. **Access Vercel**: Visit [Vercel](https://vercel.com/). If you do not yet have a Vercel user account, you must create one using the "Sign Up" button and link it to your own GitHub user account. If you already have a Vercel user account, you should log in using the linked GitHub user account via the button "Log In". 
+1. **Access Vercel**: Visit [Vercel](https://vercel.com/). If you do not yet have a Vercel user account, you must create one using the `Sign Up` button and link it to your own GitHub user account. If you already have a Vercel user account, you should log in using the linked GitHub user account via the button `Log In`. 
 2. **GitHub Integration**: Select the option to log in using GitHub. This will streamline our development process and simplify deployments.
 3. **Authenticate**: You may be prompted to authorize Vercel to access your GitHub account. Please allow this authentication.
 4. **Redirection**: After successful login and authentication, you will be redirected to the Vercel homepage.
-5. **Create a new Vercel project**: Create a new Vercel project "dlminfwawt02_web_architectures" within your personal Vercel account and link it to the GitHub project "DLMINFWAWT02_Web_Architectures" that was created before.
+5. **Create a new Vercel project**: Create a new Vercel project `dlminfwawt02_web_architectures` within your personal Vercel account and link it to the GitHub project `DLMINFWAWT02_Web_Architectures` that was created before.
 
 ## Step 3: Create a Serverless PostgreSQL Database
 
