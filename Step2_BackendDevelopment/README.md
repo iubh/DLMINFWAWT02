@@ -24,10 +24,23 @@ Before you begin, ensure you have set up your PostgreSQL database on Vercel and 
 2. Select the Storage tab, then select the Connect Store button.
 3. Select PostgreSQL, enter a database name, and choose a region.
 4. Review the credentials generated for your database: `POSTGRES_URL`, `POSTGRES_USER`, `POSTGRES_HOST`, `POSTGRES_PASSWORD`, `POSTGRES_DATABASE`.
-5. Pull the environment variables into your local environment:
+5. Install the Vercel CLI (command line interface):
+   ```sh
+   npm i -g vercel
+   ```
+   Remark: You might need to use `sudo` together with the command mentioned above in order to be able to execute it.
+6. To link your project to Vercel execute the following command while inside your local project directory:
+   ```sh
+   vercel link
+   ```
+7. Pull the environment variables into your local environment using the Vercel CLI:
    ```sh
    vercel env pull .env.development.local
    ```
+   **ATTENTION**: The `POSTGRES_URL` exported might start with `postgres://` instead of `postgresql://`. If you, please make sure to **only** use `postgresql://`. See [StackOverflow](https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre) for more details.
+8. Make sure that the environment variables `POSTGRES_URL`, `POSTGRES_USER`, `POSTGRES_HOST`, `POSTGRES_PASSWORD`, and `POSTGRES_DATABASE` as defined in the file `.env.development.local` that was created in the previous step are set whenever executing one of the below mentioned apps:
+   * [How to Set Environment Variables in MacOS](https://phoenixnap.com/kb/set-environment-variable-mac)
+   * [How to Set Environment Variable in Windows](https://phoenixnap.com/kb/windows-set-environment-variable)
 
 ## Microservice 1: Reservations (FastAPI)
 
@@ -35,10 +48,22 @@ Before you begin, ensure you have set up your PostgreSQL database on Vercel and 
 
 #### Installation
 
-First, ensure your virtual environment is activated, then install FastAPI, Uvicorn, and asyncpg:
+First, ensure your virtual environment is activated, then install [FastAPI](https://fastapi.tiangolo.com/) (web framework for building APIs with Python), [Uvicorn](https://www.uvicorn.org/) (ASGI web server implementation for Python), and [asyncpg](https://pypi.org/project/asyncpg/) (database interface library designed specifically for PostgreSQL):
 
 ```sh
-pip install fastapi uvicorn asyncpg[crypto]
+pip install fastapi uvicorn asyncpg
+```
+
+Install [SQLAlchemy](https://www.sqlalchemy.org/) (Python SQL Toolkit and Object Relational Mapper):
+
+```sh
+pip install sqlalchemy
+```
+
+Install [Psycopg](https://www.psycopg.org/) (PostgreSQL adapter for the Python programming language):
+
+```sh
+pip install psycopg2-binary
 ```
 
 #### Project Structure
@@ -140,8 +165,8 @@ Create the reservation router:
 ```python
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from . import schemas, models
-from .database import SessionLocal
+from .. import schemas, models
+from ..database import SessionLocal
 
 router = APIRouter(
     prefix="/reservations",
@@ -187,6 +212,7 @@ cd auth
 npm init -y
 npm install express mongoose bcryptjs jsonwebtoken pg
 ```
+Remark: You might need to use `sudo` together with the last two commands mentioned above in order to be able to execute them.
 
 #### Project Structure
 
@@ -228,7 +254,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Authentication Microservice');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
