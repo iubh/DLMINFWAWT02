@@ -20,6 +20,10 @@ Open your terminal and run:
 npx create-next-app@latest
 ```
 
+Remarks:
+* You might need to use sudo together with the command mentioned above in order to be able to execute it.
+* npx is installed as part of npm which in turn is installed as part of Node.js
+
 You will see the following prompts. Answer them as follows:
 
 ```
